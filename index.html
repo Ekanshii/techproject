@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline Form</title>
+    <link rel="stylesheet" href="project2.css">
+</head>
+    <!-- Add this in the <head> section of your HTML -->
+<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+<!-- Orbitron example -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+
+
+
+<body>
+    <div id="image" ></div>
+    
+    <h1>SHADOWBLADE</h1><br>
+    <button onclick="showSection('new')">New Game</button>
+    <button onclick="showSection('weapon')">Weapons</button>
+    <button onclick="showSection('friend')">Friends</button>
+
+    <div id="new" class="section" style="display: none;">
+    <br><br>
+    <form id="newGame"><br>
+        <h2>New Game</h2><br><br>
+        <label for="codename">Code Name</label>
+        <input type="text" id="codename" placeholder=" type code name" required>
+        <br><br>
+
+         <label for="factionid"> Faction ID</label>
+        <input type="number" id="factionid" placeholder="4-digit encrypted faction code" required>
+        <br><br>
+
+        <h3>Select Mission</h3><br>
+        <div id="recon">Recon at Delta Zone
+            <div id="sabotage">Sabotage the Drone Core</div>
+            <div id="rescue">Rescue Operation Zero</div>
+        </div>
+
+        <button type="submit">Deploy
+        </button>
+    </form>
+    </div>
+
+
+
+
+    <div id="weapon" class="section" style="display: none;">
+    <form id="weaponGame">
+    <button type="button" onclick="showWeapon('weapon1')">weapons</button>
+    <button type="button" onclick="showWeapon('weapon2')">Wardrobe</button>
+    </form>
+    </div>
+
+
+    <div id="weapon1" class="section" style="display: none;">
+    <form id="weaponGame1"> <br>
+        <h2>Loadout Customizer</h2><br><br> 
+
+        <label for="primary">Primary Weapon</label>
+        <input type="text" id="primary" placeholder="e.g., Plasma Rifle Mk-II" required>
+        <br><br>
+
+        <label for="secondary"> Secondary Weapon</label>
+        <input type="text" id="secondary" placeholder="e.g., Stealth Dagger, Energy Pistol" required>
+        <br><br>
+
+        <h3>Gadget</h3>
+        <select name="gadget">
+            <option value="">Select a Tool</option>
+            <option value="Nano Cloak">Nano Cloak</option>
+            <option value="EMO Grenade">EMO Grenade</option>
+            <option value="Pune"></option>
+        </select>
+        <br><br>
+
+
+        <button type="submit">Submit
+        </button>
+    </form>
+    </div>
+
+    <div id="afterSubmitweapon1" class="hidden" style="display: none;">
+        <p><strong>Data saved successfully</strong></p>
+        <button id="proceed1">Proceed</button>
+        <button id="edit1">Edit</button>
+    </div>
+
+
+
+    <div id="weapon2" class="section" style="display: none;">
+    <form id="weaponGame2">
+        <h2>Wardrobe</h2><br><br>
+
+        <h3>Clothing</h3>
+        <select name="Clothing">
+            <option value="">Clothing</option>
+            <option value="top">Tops</option>
+            <option value="bottom">Bottoms</option>
+            <option value="dress">Dresses</option>
+            <option value="mask">Masks</option>
+        </select>
+        <br><br>
+
+         <h3>Footwear</h3>
+         <select name="Footwear">
+         <option value="">Footwear</option>
+         <option value="sneaker">Sneakers</option>
+         <option value="sandal">Sandals</option>
+         <option value="none">None</option>
+        </select>
+        <br><br>
+
+        <h3>Accessories</h3>
+         <select name="Accessories">
+            <option value="">Accessories</option>
+            <option value="gloves">Gloves</option>
+            <option value="belts">Belts</option>
+            <option value="scarves">Scarves</option>
+            <option value="nunjatool">Ninja tool</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Submit
+        </button>
+    </form>
+    </div>
+
+    <div id="friend" class="section" style="display: none;">
+    <form id="friendGame"> <br>
+        <h2>Add Friends</h2><br>
+
+        <br>
+        <p>Recruit an Ally-Only Trusted Agents allowed</p>
+        <p>Input your comrade's details to grant mission sync access.</p><br>
+        
+        <label for="agentname2"> Agent Codename</label>
+        <input type="text" id="agentname2" placeholder="type agent codename" required>
+        <br><br>
+
+        <label for="agentname"> Agent Codename</label>
+        <input type="text" id="agentname" placeholder="type agent codename" required>
+        <br><br>
+
+        <label for="link"> Join through link</label>
+        <input type="text" id="link" placeholder="type agent codename" required>
+        <br><br><br>
+
+
+        <p>share</p>
+        <img src="/Image Folder/logo.png" alt="notebook" height="50"> 
+        <br><br>
+
+        <button type="submit">Done
+        </button>
+    </form>
+    </div>
+
+    
+<script src="project2.js"></script> 
+</body>
+</html>
