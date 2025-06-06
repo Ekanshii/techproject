@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+} 
+
+html,body{
+    width:100%;
+    height:100%;
+}
+
+#image{
+    width:100%;
+    height:80%;
+    background-image: url(/Image\ Folder/ninja.png);
+    background-size: contain;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+body{background-color: rgb(16, 10, 49);
+    background-image: url(/Image\ Folder/background2.png);
+    background-size: cover;
+
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size:x-large;
+    color: gold;
+    
+}
+
+h1,h2{
+    font-family: 'Bungee', cursive;
+     text-shadow: 0px 0px 10px #161919,0px 10px 0px #040707,10px 0px 0px #040707;
+}
+
+.section{
+    display:none; 
+    margin:20px;
+}
+
+button{ 
+    font-family: 'Orbitron', sans-serif;
+    color:gold;
+    border:2px solid gold;
+    padding:10px 20px;
+    margin:10px; 
+    height:50px;
+    background-color: #2d2b22;}
+
+#newGame{
+    border:2px solid gold;
+    color:gold;
+    background-color: #2d2b22;
+}
+
+#recon{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:bottom;
+    color:whitesmoke;
+    background-image: url(/Image\ Folder/backg1.png);
+    background-size:contain;
+    background-position:135px ;
+    background-repeat: no-repeat;
+}
+    
+
+#sabotage{
+    color:whitesmoke;
+    width:250px;
+    height:300px;
+    background-image: url(/Image\ Folder/backg2.png);
+    background-size:cover;
+    background-position:center ;
+    background-repeat: no-repeat;
+}
+
+#rescue{
+    color:whitesmoke;
+    width:250px;
+    height:300px;
+    background-image: url(/Image\ Folder/backg3.png);
+    background-size:cover;
+    background-position:center ;
+    background-repeat: no-repeat;
+}
+
+#weapon1{
+     border:2px solid gold;
+     background-color: #2d2b22;
+
+}
+
+#weapon2{
+    border:2px solid gold;
+    background-color: #2d2b22;
+    text-align: left;
+    padding: 50px;
+    background-image:url(/Image\ Folder/ninja2.png) ;
+    background-size:contain;
+    background-position:right ;
+    background-repeat: no-repeat;
+}
+
+#friend{
+    border:2px solid gold;
+    background-color:  #2d2b22;
+}
